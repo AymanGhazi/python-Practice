@@ -173,7 +173,7 @@ my_set = {1, 2, 3, 4, 5, 6, 7, 7}
 # my_list = [1, 2, 3, 4, 5, 4, 6, 2, 6, 3]
 # my_set.add(1000)
 # my_set = set(my_list)
-# print(my_set[0])  # error
+# print(my_set[0])  # error immutable
 # my_set.clear()
 
 # print(my_list)

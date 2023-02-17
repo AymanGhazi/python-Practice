@@ -62,7 +62,7 @@ relationShip_status = "it\'s complicated"
 # user_age = datetime.datetime.now().year - int(year_of_birth)
 # password = input("what is your secret ?")
 # message = f' {name} ,Your Age is {user_age} , your password is {"*" * len(password)} and password length is {len(password)} letters long '
-#############################################################################################################
+# ############################################################################################################
 # list somehow is array
 li = [0, 1, 2, 3, 4, 5]
 li2 = ['a', 'b', 'c', 'd', 'd']
@@ -107,11 +107,87 @@ matrix = [
 # sentence = "!"  # joined with every item in the list with Join
 # new_sentence = sentence.join(["Hi", "my", "name", "is", "Ayman"])
 # print(new_sentence)
-############################## list Unpacking
+# ############################# list Unpacking
 a, b, c, *other = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 # print(a)
 # print(b)
 # print(c)
 # print(other)
-################################ none
+# ############################### none
 # weapons = None
+
+DICT1 = {
+    "a": [1, 2, 3, 4, 5, 6],
+    "greetings": "Hello",
+    "is_magic": True
+}
+List_DICTS = [
+    {
+        "a": [1, 2, 3, 4, 5, 6],
+        "greetings": "Hello",
+        "is_magic": True
+    },
+    {
+        "a": [7, 8, 9, 10, 11, 12],
+        "greetings": "HII",
+        "is_magic": False
+    },
+    {
+        "a": [1, 2, 3, 4, 5, 6],
+        "greetings": "Hello",
+        "is_magic": True
+    }
+]
+# print(List_DICTS[0]["a"])
+#  ######### DICTs Methods
+user = {
+    123: [1, 2, 3, 4, 5, 6],
+    "greeting": "Hello",
+    True: "Hello",
+    # [1, 2, 3]: True  unhashable as it is mutable
+}
+new_user = dict(name="ayman")
+# print(user.get('greeting', "hello Mr/Ms"))
+# print("name" in new_user.values())
+# print("name" in new_user.keys())
+# print(new_user.items())
+# new_user = user.copy()
+# user.clear()
+# print(user.popitem())  # removes a random item
+# print(user.pop(123))
+# user.update({"age": 50})
+# print(user)
+# ########################################  Tuple
+lat = 111112222222
+lng = 222265648
+my_tuple = (lat, lng)
+# my_tuple[1] = "hello"  # immutable
+# print(my_tuple[0])
+# user.update({(1, 2): "this is Tuple Value"})
+# print(user[(1, 2)])
+a, b, c, *other = (1, 2, 3, 4, 5, 6)
+# print(a)
+# print(other)
+# ####################################### Sets
+my_set = {1, 2, 3, 4, 5, 6, 7, 7}
+# my_list = [1, 2, 3, 4, 5, 4, 6, 2, 6, 3]
+# my_set.add(1000)
+# my_set = set(my_list)
+# print(my_set[0])  # error
+# my_set.clear()
+
+# print(my_list)
+your_Set = {1, 2, 3, 4, 5, 6, 8, 7, 9, 10, 100, 122}
+# print(my_set.difference(your_Set))
+# print(my_set.discard(5))
+# print(my_set)
+# your_Set.difference_update(my_set)  # puts Difference only
+# print(your_Set)
+# print(my_set.intersection(your_Set))
+# print(my_set & your_Set) # intersection shorthand
+# print(my_set.isdisjoint(your_Set))
+# print(my_set.union(your_Set))
+# print(my_set | your_Set)  # union shorthand
+# print(my_set.issubset(your_Set))
+# print(my_set.issuperset(your_Set))
+print(your_Set.issuperset(my_set))
